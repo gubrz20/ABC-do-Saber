@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2f63bf">
+  <meta name="description" content="Um lugar para descobrir letras, brincar e ouvir histórias. Com um elefantinho para acompanhar cada descoberta.">
+  <title>ABC do saber — uma descoberta de cada vez</title>
+  <link rel="icon" href="assets/abc-do-saber-logo/logo-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="quintal.css">
+  <script src="config.js" defer></script>
+  <script src="app.bundle.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio"><img src="assets/abc-do-saber-logo/logo.svg" alt="ABC do saber" width="210" height="61"><span class="brand-tagline">Aprender é uma aventura</span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#inicio" data-nav="inicio"><span class="nav-symbol" data-nav-icon="home" aria-hidden="true"></span><span>Início</span></a>
+        <a href="#brincar" data-nav="brincar"><span class="nav-symbol" data-nav-icon="blocks" aria-hidden="true"></span><span>Brincar</span></a>
+        <a href="#historias" data-nav="historias"><span class="nav-symbol" data-nav-icon="book" aria-hidden="true"></span><span>Histórias</span></a>
+        <a href="#progressos" data-nav="progressos"><span class="nav-symbol" data-nav-icon="trophy" aria-hidden="true"></span><span>Progressos</span></a>
+      </nav>
+      <div class="header-actions"><button id="sound-toggle" class="icon-button" type="button" aria-label="Sem voz. Ativar voz do elefantinho" aria-pressed="false"></button><span class="header-action-divider" aria-hidden="true"></span><a class="adult-link" href="#adultos"><span aria-hidden="true" id="adult-icon"></span><span>Área dos adultos<span class="adult-link-note" aria-hidden="true">Família e escola</span></span></a></div>
+    </div>
+  </header>
+  <div id="session-strip" class="session-strip" hidden></div>
+  <main id="conteudo" tabindex="-1"></main>
+  <footer class="site-footer"><a href="#inicio" class="footer-brand">ABC do saber<span>Aprender começa com uma descoberta.</span></a><p>Feito para explorar, imaginar e aprender junto.</p><a href="#adultos">Para famílias e professores <span aria-hidden="true">↗</span></a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="app-dialog" aria-labelledby="dialog-title"></dialog>
+</body>
+</html>

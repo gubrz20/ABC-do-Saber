@@ -1,0 +1,36 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": [
+    "src"
+  ],
+  "locale": "pt-BR",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": [
+    "Form",
+    "Select/Listbox",
+    "Scrollbar",
+    "Toast",
+    "CRUD"
+  ],
+  "ownership": {
+    "Select/Listbox": "native"
+  },
+  "requiredCommands": [
+    "unit",
+    "e2e",
+    "database",
+    "header",
+    "interactions"
+  ],
+  "commands": {
+    "unit": "npm test",
+    "e2e": "npm run test:e2e",
+    "database": "npm run test:database",
+    "header": "npm run test:header",
+    "interactions": "npm run test:interactions"
+  },
+  "evidence": {
+    "crudFullFlow": "tests/browser.mjs",
+    "failurePaths": "tests/database.mjs"
+  }
+}

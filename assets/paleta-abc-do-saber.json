@@ -1,0 +1,21 @@
+{
+  "name": "ABC do saber — paleta infantil",
+  "colors": {
+    "primary": "#2F63BF",
+    "mascotBlue": "#86B6E8",
+    "yellow": "#F7C95C",
+    "coral": "#E88B78",
+    "mint": "#72B99A",
+    "ink": "#243557",
+    "muted": "#55647B",
+    "canvas": "#FFFDF8",
+    "surface": "#FFFFFF",
+    "blueTint": "#EAF3FE",
+    "yellowTint": "#FFF4D6",
+    "coralTint": "#FFF0EA",
+    "successTint": "#EDF7F1",
+    "success": "#35745B"
+  },
+  "usage": "Azul para ações; amarelo para conquistas; coral e verde como apoios; fundos claros e texto escuro. Os pastéis não são cores de texto sobre branco. O logo vetorial original mantém sua cor de marca.",
+  "tool": "AI Color Picker - Design Tool"
+}

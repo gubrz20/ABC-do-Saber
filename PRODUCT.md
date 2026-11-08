@@ -1,0 +1,14 @@
+# Product decisions
+
+Source: user decisions in this conversation, 26 October 2026 (America/Sao_Paulo).
+
+- Name: **ABC do saber**. Children aged 3–5, school computers with mouse and teacher support; audio is not always available.
+- Toy and geometric visual language. Latest visual direction: the elephant’s letter garden, with letter planters, toy trains, paper labels and a discovery album. Latest user instruction adds a friendly elephant mascot that speaks and guides, overriding the earlier no-mascot direction.
+- Available content: five games (Encontre a letra, Memória das vogais, Letra e figura, Jardim das letras, Trem das vogais) and three original five-scene stories (A Casa das Vogais, O Elefantinho e a Semente, A Pipa da Amizade), with real completion records. Content needs teacher review before classroom use; completion is not evidence of literacy mastery.
+- Latest user change: replace Descobertas with **Progressos** and grant achievements as activities are completed. The original four achievements remain Primeiro passo (any first completed activity), Amigo das vogais (original vowel game), Um mundo de histórias (original vowel story), and Grande explorador (those two original activities). Four additional badges reward the previously added activities individually: Boa memória, Letras e figuras, Amigo do jardim and Histórias de amizade. Two more badges, Jardineiro das letras and Maquinista das vogais, reward the garden and train games. There are 8 activities and 10 achievements. Grande explorador keeps its original condition so existing earned badges are not revoked. Derive these from existing saved completion IDs; repeating an activity never earns it twice. Previously completed activities automatically count toward the new achievements.
+- A responsible adult owns profiles. Teachers receive explicit authorization per child after the family inspects the invitation identity. The family can revoke access.
+- Child sessions cannot return to adult data without authentication. Changing children ends the previous scoped session. Adult passwords and adult authentication tokens are never saved to browser storage.
+- A local exploration mode contains no accounts or personal data and stores only the known completed activity identifiers in this browser tab. It is visibly distinguished from a connected profile.
+- No billing, ranking, microphone, camera, speech recording, school administrator, formal grade or personal-data analytics.
+
+Technical defaults selected for the first release: Supabase Auth with email confirmation, RPC-only table access, single-use teacher invitations valid for 7 days, child-scoped sessions valid for 2 hours. Public URL and publishable key go in config.js; no server secret is shipped. Lifecycle controls must be verified before real deployment. Nothing in this file asserts legal compliance or pedagogical validation.

@@ -1,0 +1,188 @@
+/* Quintal identity: illustrated garden, paper labels, toy rails and a sticker album.
+   Shared tokens remain in styles.css; the header remains owned by header.css. */
+.quintal-home { padding-top: 32px; }
+.quintal-hero { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 12px; min-height: 450px; }
+.quintal-copy { padding: 18px 0 28px; position: relative; z-index: 1; }
+.quintal-copy .eyebrow { color: var(--green); font-size: 11px; letter-spacing: 1.5px; }
+.quintal-copy h1 { font-size: clamp(42px,4.7vw,68px); line-height: 1.04; letter-spacing: -1.5px; margin: 22px 0; }
+.quintal-copy h1 span { color: var(--blue); text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 8px; text-underline-offset: 8px; }
+.quintal-copy p { max-width: 380px; font-size: 18px; line-height: 1.65; color: var(--muted); margin-bottom: 24px; }
+.quintal-copy .hero-buttons { gap: 12px; flex-wrap: wrap; }
+.quintal-copy .hero-buttons .soft { background: transparent; padding-inline: 0; font-size: 13px; }
+.quintal-invite { margin-top: 26px; display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); font-weight: 800; }
+.quintal-invite svg { color: var(--green); flex-shrink: 0; }
+.quintal-scene { position: relative; width: 100%; aspect-ratio: 660/450; }
+.quintal-scene>svg { width: 100%; height: 100%; }
+.quintal-scene .hero-mascot { position: absolute; width: 43%; height: auto; right: 8%; left: auto; bottom: 22%; filter: none; transform: none; }
+.quintal-sign { position: absolute; right: 10%; top: 1%; border: 2px solid var(--ink); border-radius: 5px 15px 5px 15px; background: var(--yellow-tint); padding: 10px 20px; line-height: 1.2; font-size: 12px; text-align: center; transform: rotate(4deg); box-shadow: 3px 4px 0 #24355712; }
+.quintal-sign strong { font-family: 'Baloo 2',sans-serif; font-size: 22px; }
+.vowel-fence { display: flex; align-items: center; justify-content: center; gap: 38px; margin: 22px 0 52px; padding: 22px 24px; border-block: 2px dashed #cad8cc; }
+.vowel-fence>span { font-size: 13px; color: var(--muted); line-height: 1.5; }
+.vowel-fence>div { display: flex; gap: 13px; }
+.fence-letter { display: grid; place-items: center; min-width: 65px; height: 70px; border: 2px solid var(--ink); border-radius: 12px 12px 6px 6px; box-shadow: 0 5px 0 #243557; color: var(--ink); font-size: 43px; font-weight: 900; background: var(--yellow); }
+.fence-letter.blue { background: var(--blue-tint); }.fence-letter.coral { background: var(--coral); }
+
+.quintal-destinations { display: grid; grid-template-columns: 1.15fr 1fr; gap: 24px; }
+.destination { padding: 25px; display: flex; align-items: center; gap: 22px; color: var(--ink); border: 1.5px solid #c5d7cb; border-radius: 10px; background: var(--green-tint); position: relative; }
+.destination h2 { font-size: 30px; margin: 5px 0; line-height: 1.15; }
+.destination p { color: var(--muted); font-size: 13px; margin: 8px 0 16px; max-width: 260px; }
+.destination .eyebrow { font-size: 9px; letter-spacing: 1px; }
+.destination .card-action { font-size: 12px; gap: 9px; justify-content: flex-start; }
+.destination:hover { border-color: var(--green); box-shadow: 0 5px 0 #24355710; }
+.destination-play { grid-row: span 2; flex-direction: column; align-items: flex-start; padding: 25px 35px 35px; }
+.destination-play:before { content: ''; position: absolute; top: -5px; left: 33px; width: 65px; height: 13px; background: var(--yellow); transform: rotate(-3deg); }
+.destination-art { width: 85%; max-width: 260px; align-self: center; }
+.destination-art svg { width: 100%; display: block; }
+.destination-play h2 { font-size: 38px; }
+.destination-book { background: var(--coral-tint); border-color: #e7c6bc; }
+.destination-book>svg { width: 120px; flex-shrink: 0; }
+.destination-passport { background: var(--yellow-tint); border: 2px dashed #d3ba72; }
+.passport-stamp { display: grid; place-items: center; width: 94px; height: 100px; flex-shrink: 0; border: 2px solid var(--ink); border-radius: 40% 40% 10px 10px; color: var(--ink); background: var(--yellow); }
+.quintal-home .gentle-note { margin-top: 40px; }
+.game-workbench { grid-template-columns: repeat(6,minmax(0,1fr)); gap: 28px 24px; align-items: stretch; }
+.game-workbench .catalog-feature { grid-column: span 2; border-radius: 9px 23px 9px 9px; border: 1.5px solid #d3d7d4; box-shadow: 0 6px 0 #2435570c; position: relative; overflow: visible; }
+.game-workbench .catalog-feature:nth-child(n+4) { grid-column: span 3; display: flex; flex-direction: row; align-items: center; }
+.game-workbench .catalog-feature:nth-child(n+4) .catalog-art { width: 43%; flex-shrink: 0; margin: 0; }
+.game-workbench .catalog-feature:nth-child(n+4)>div:last-child { padding: 24px; }
+.game-workbench .catalog-feature:before { content: ''; position: absolute; width: 50px; height: 11px; top: -5px; left: 25px; background: var(--yellow); transform: rotate(-4deg); }
+.game-workbench .catalog-feature.green:before { background: var(--mint); }
+.game-workbench .catalog-feature .catalog-art { border-radius: 8px 22px 0 0; }
+.game-workbench .catalog-feature:hover { transform: translateY(-3px); border-color: var(--ink); }
+.game-board { border: 2px solid #cedbd1; border-radius: 12px; box-shadow: 0 8px 0 #24355708; position: relative; }
+.game-board:before { content: ''; display: block; width: 76px; height: 12px; background: var(--yellow); position: absolute; left: calc(50% - 38px); top: -6px; transform: rotate(-2deg); }
+.vowel-collection { display: flex; justify-content: center; gap: 10px; margin: 0 auto 24px; }
+.vowel-collection>span { display: grid; place-items: center; position: relative; width: 42px; height: 45px; font-weight: 900; font-size: 23px; border: 1.5px dashed #78899b; border-radius: 7px; color: var(--muted); background: var(--canvas); }
+.vowel-collection>span.collected { border: 1.5px solid var(--green); background: var(--green-tint); color: var(--green); box-shadow: 0 3px 0 #35745b20; }
+.vowel-collection svg { position: absolute; bottom: -5px; right: -5px; background: var(--green); color: #fff; border-radius: 50%; width: 18px; height: 18px; padding: 2px; }
+.letter-workshop { background: #fffdf8; }
+.letter-model.outline-model { color: transparent; -webkit-text-stroke: 3px var(--ink); background: var(--yellow-tint); }
+.hint-control { margin: -6px auto 14px; font-size: 12px; min-height: 56px; }
+.game-mode { display: flex; justify-content: center; gap: 8px; margin: 0 auto 24px; flex-wrap: wrap; }
+.mode-button { border: 1.5px solid #8c9db2; border-radius: 10px; color: var(--muted); background: white; padding: 12px 22px; font-weight: 900; min-height: 56px; }
+.mode-button[aria-pressed=true] { background: var(--blue-tint); color: var(--blue); border-color: var(--blue); box-shadow: 0 3px 0 var(--blue); }
+.mode-note { font-size: 11px; color: var(--muted); margin: -12px 0 20px; }
+.memory-five { grid-template-columns: repeat(5,minmax(0,1fr)); max-width: 700px; }
+.memory-five .memory-card { width: 100%; }
+.pair-gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin: 20px 0; }
+.pair-gallery>span { position: relative; display: flex; flex-direction: column; align-items: center; min-width: 68px; font-size: 10px; color: var(--muted); }
+.pair-gallery svg,.pair-gallery img { width: 60px; height: 52px; object-fit: contain; }
+.pair-gallery strong { font-size: 22px; color: var(--green); }
+.figure-word[hidden] { display: none; }
+.garden-board { background: #f4f9f2; padding-bottom: 30px; }
+.garden-task { display: flex; align-items: center; justify-content: center; gap: 18px; text-align: left; }
+.seed-model { font-size: 65px; font-weight: 900; line-height: 1; background: var(--yellow); border: 2px solid var(--ink); border-radius: 12px; padding: 12px 24px; box-shadow: 0 4px 0 var(--ink); }
+.garden-task p { font-size: 18px; color: var(--ink); }
+.garden-task p>span { display: block; color: var(--green); font-size: 14px; font-weight: 900; margin-top: 5px; }
+.flower-bed { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 15px 20px; max-width: 610px; margin: 32px auto 20px; padding: 15px 20px 0; border-bottom: 12px solid #bd855d; border-radius: 0 0 12px 12px; }
+.flower-tile { position: relative; background: transparent; border: 0; min-width: 0; min-height: 140px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; color: var(--ink); padding: 8px 6px 0; border-radius: 14px; }
+.flower-tile:hover:not(:disabled) { background: #35745b0b; }
+.flower-face { display: grid; place-items: center; width: 84px; height: 84px; border: 2px solid var(--ink); border-radius: 42% 42% 42% 42%; background: var(--yellow); font-size: 45px; font-weight: 900; box-shadow: 9px 0 0 #f7c95c,-9px 0 0 #f7c95c,0 -7px 0 #f7c95c,0 7px 0 #f7c95c; position: relative; z-index: 1; }
+.flower-tile:nth-child(2n) .flower-face { background: #f3b5a5; box-shadow: 9px 0 0 #f3b5a5,-9px 0 0 #f3b5a5,0 -7px 0 #f3b5a5,0 7px 0 #f3b5a5; }
+.flower-stem { display: block; width: 5px; height: 38px; background: var(--green); position: relative; }
+.flower-stem:after { content: ''; position: absolute; width: 22px; height: 12px; background: var(--mint); border: 1px solid var(--green); border-radius: 0 80% 0 80%; left: 4px; top: 6px; transform: rotate(-25deg); }
+.flower-tile:disabled { opacity: 1; cursor: default; }
+.flower-tile.found .flower-face { background: var(--green-tint); border-color: var(--green); box-shadow: 9px 0 0 #72b99a,-9px 0 0 #72b99a,0 -7px 0 #72b99a,0 7px 0 #72b99a; color: var(--green); }
+.flower-face svg { position: absolute; right: -9px; bottom: -4px; border-radius: 50%; background: var(--green); color: white; padding: 4px; width: 28px; height: 28px; }
+.game-feedback { min-height: 28px; color: var(--ink); font-weight: 800; margin: 22px 0; }
+.train-board { background: var(--blue-tint); }
+.train-label { display: block; text-align: left; color: var(--ink); font-size: 13px; font-weight: 900; margin: 0 0 8px; }
+.train-model,.train-your { max-width: 590px; margin: 0 auto 22px; }
+.letter-train { display: flex; align-items: flex-end; gap: 15px; padding: 8px 8px 24px; border-bottom: 5px double #8c785f; }
+.train-engine { width: 80px; height: 72px; display: grid; place-items: center; background: var(--blue); color: white; border: 2px solid var(--ink); border-radius: 15px 6px 6px 6px; flex-shrink: 0; position: relative; }
+.train-wagon { display: grid; place-items: center; flex: 1; height: 82px; border: 2px solid var(--ink); border-radius: 10px; position: relative; background: var(--yellow); color: var(--ink); font-weight: 900; font-size: 46px; }
+.train-wagon:nth-of-type(3) { background: var(--coral); }.train-wagon:nth-of-type(4) { background: #b7d9c7; }
+.train-wagon:before,.train-engine:before { content: ''; position: absolute; bottom: -13px; left: 10%; width: 17px; height: 17px; border: 4px solid var(--ink); background: white; border-radius: 50%; box-shadow: 56px 0 0 -4px white,56px 0 0 0 var(--ink); }
+.train-wagon:after { content: ''; position: absolute; left: -18px; bottom: 15px; width: 15px; border-top: 3px solid var(--ink); }
+.train-model .train-wagon { height: 60px; font-size: 34px; }.train-model .train-engine { height: 52px; }
+.train-wagon.missing-wagon { background: white; border: 3px dashed var(--blue); color: var(--blue); }
+.train-options { margin-top: 28px; }
+.progress-overview { border-radius: 10px; border: 2px solid #d7c480; background: var(--yellow-tint); }
+.achievement-card { border-radius: 8px; border-style: dashed; position: relative; }
+.earned.green .achievement-symbol { color: var(--green); background: var(--green-tint); }
+.achievement-card.earned { border-style: solid; background: #fffdf8; box-shadow: 0 5px 0 #2435570b; }
+.achievement-symbol { border: 2px solid currentColor; border-radius: 40% 40% 30% 30%; }
+@media(max-width:1100px) { .quintal-copy h1 { font-size: 55px; }.quintal-copy .hero-buttons { display: flex; flex-direction: column; align-items: flex-start; }.quintal-hero { min-height: 400px; }.vowel-fence { gap: 22px; }.destination { gap: 15px; padding: 22px; }.destination-book>svg { width: 85px; } }
+@media(max-width:900px) { .quintal-copy h1 { font-size: 46px; }.quintal-copy p { font-size: 16px; }.quintal-sign { top: -8%; padding: 8px 12px; }.quintal-sign strong { font-size: 18px; }.quintal-invite { max-width: 270px; }.fence-caption { display: none; }.game-workbench { grid-template-columns: repeat(2,minmax(0,1fr)); }.game-workbench .catalog-feature { grid-column: span 1; }.game-workbench .catalog-feature:nth-child(n+4) { grid-column: span 1; display: block; }.game-workbench .catalog-feature:nth-child(n+4) .catalog-art { width: auto; }.game-workbench .catalog-feature:nth-child(n+4)>div:last-child { padding: 24px; }.quintal-destinations { grid-template-columns: 1fr; }.destination-play { grid-row: auto; flex-direction: row; align-items: center; }.destination-art { width: 35%; }.destination-play h2 { font-size: 30px; }.destination-book>svg { width: 110px; }.destination-passport .passport-stamp { width: 110px; } }
+@media(max-width:650px) { .quintal-home { padding-top: 22px; }.quintal-hero { grid-template-columns: 1fr; gap: 10px; }.quintal-copy { padding: 0; }.quintal-copy h1 { font-size: 45px; line-height: 1.08; margin: 17px 0; letter-spacing: -1px; }.quintal-copy p { margin-bottom: 18px; max-width: 330px; }.quintal-copy .eyebrow { font-size: 9px; letter-spacing: 1px; }.quintal-copy .hero-buttons { flex-direction: row; align-items: center; gap: 8px; }.quintal-copy .hero-buttons .button { font-size: 12px; }.quintal-invite { max-width: none; margin-top: 15px; font-size: 10px; }.quintal-scene { margin-top: 18px; }.quintal-sign { top: -1%; right: 6%; padding: 6px 12px; font-size: 9px; }.quintal-sign strong { font-size: 18px; }.vowel-fence { margin: 22px 0 36px; padding: 18px 0; flex-direction: column; gap: 15px; }.vowel-fence>span:first-child { text-align: center; font-size: 12px; }.vowel-fence>span br { display: none; }.vowel-fence>div { gap: 10px; width: 100%; justify-content: center; }.fence-letter { min-width: 48px; height: 56px; font-size: 33px; }.destination,.destination-play { gap: 16px; padding: 22px; }.destination-art { width: 90px; flex-shrink: 0; }.destination h2,.destination-play h2 { font-size: 26px; }.destination p { font-size: 12px; }.destination .eyebrow { font-size: 8px; letter-spacing: .5px; }.destination-book>svg { width: 90px; }.destination-passport .passport-stamp { width: 90px; height: 95px; }.game-workbench { grid-template-columns: 1fr; gap: 28px; }.game-board { padding: 25px 16px; }.vowel-collection { gap: 8px; margin-bottom: 25px; }.vowel-collection>span { width: 36px; height: 40px; font-size: 21px; }.memory-five { grid-template-columns: repeat(2,minmax(0,1fr)); }.memory-five .memory-card { height: 100px; }.garden-task { gap: 15px; }.seed-model { font-size: 50px; padding: 11px 18px; }.garden-task p { font-size: 14px; }.garden-task p>span { font-size: 12px; }.flower-bed { gap: 8px; padding: 12px 0 0; }.flower-face { width: 61px; height: 64px; font-size: 35px; box-shadow: 6px 0 0 #f7c95c,-6px 0 0 #f7c95c,0 -4px 0 #f7c95c,0 4px 0 #f7c95c; }.flower-tile:nth-child(2n) .flower-face { box-shadow: 6px 0 0 #f3b5a5,-6px 0 0 #f3b5a5,0 -4px 0 #f3b5a5,0 4px 0 #f3b5a5; }.flower-tile { min-height: 113px; }.flower-face svg { width: 24px; height: 24px; }.game-feedback { font-size: 14px; }.letter-train { gap: 9px; padding-inline: 0; }.train-engine { width: 40px; height: 58px; }.train-engine svg { width: 29px; }.train-wagon { height: 65px; font-size: 36px; }.train-model .train-wagon { height: 50px; font-size: 28px; }.train-model .train-engine { height: 43px; }.train-wagon:before,.train-engine:before { width: 12px; height: 12px; left: 10%; bottom: -10px; border-width: 3px; box-shadow: 29px 0 0 -3px white,29px 0 0 0 var(--ink); }.train-engine:before { box-shadow: 13px 0 0 -3px white,13px 0 0 0 var(--ink); }.train-wagon:after { width: 8px; left: -11px; }.quintal-home .gentle-note { margin-top: 28px; } }
+@media(max-width:360px) { .quintal-copy h1 { font-size: 39px; }.quintal-copy .hero-buttons { flex-direction: column; align-items: flex-start; }.destination,.destination-play { gap: 12px; padding: 19px 15px; }.destination-art,.destination-book>svg,.destination-passport .passport-stamp { width: 65px; }.passport-stamp { height: 80px; }.destination .card-action { font-size: 11px; }.train-wagon:before { box-shadow: 23px 0 0 -3px white,23px 0 0 0 var(--ink); }.flower-face { width: 54px; height: 59px; } }
+@media(prefers-reduced-motion:reduce) { .fence-letter:hover,.game-workbench .catalog-feature:hover { transform: none; } }
+
+/* Stable activity surfaces: choices never replace or reposition the play area. */
+.game-page { overflow-anchor: none; }
+.activity-actions { min-height: 76px; display: flex; justify-content: center; align-items: center; gap: 12px; }
+.game-page .game-feedback,.game-page .memory-feedback,#figure-feedback { min-height: 54px; display: flex; align-items: center; justify-content: center; line-height: 1.65; }
+.game-page .model-caption { min-height: 48px; }
+.letter-result { min-height: 160px; display: grid; align-items: center; }
+.letter-result .discovery-reveal { margin: 10px auto; }
+.letter-choice.tried { outline: 2px dashed var(--ink); outline-offset: 5px; }
+.flower-tile.tried .flower-face { outline: 2px dashed var(--ink); outline-offset: 5px; }
+.flower-basket { display: flex; justify-content: center; gap: 9px; margin: 20px 0 -10px; }
+.flower-basket>span { display: grid; place-items: center; width: 43px; height: 44px; border: 1.5px dashed #78899b; border-radius: 12px; color: var(--muted); background: white; }
+.flower-basket .picked { color: var(--green); border: 1.5px solid var(--green); background: var(--green-tint); }
+.pair-gallery { min-height: 110px; align-items: center; }
+.gallery-placeholder { font-size: 12px; color: var(--muted); border: 1px dashed #bacabd; border-radius: 12px; padding: 20px; }
+.train-board .hint-control { margin: 0 auto 0; }
+.train-wagon.model-hint { outline: 3px solid var(--blue); outline-offset: 5px; }
+.train-wagon.model-hint:after { border-color: var(--blue); }
+.train-ticket { display: flex; align-items: center; justify-content: center; gap: 14px; max-width: 550px; min-height: 114px; margin: 10px auto 0; padding: 8px 12px; text-align: left; border-block: 1px dashed #b1c6df; }
+.train-ticket .game-feedback { margin: 0; font-size: 14px; justify-content: flex-start; min-height: 50px; }
+.ticket-art { width: 65px; height: 65px; display: grid; place-items: center; color: var(--blue); flex-shrink: 0; }
+.ticket-art img,.ticket-art>svg { width: 65px; height: 65px; object-fit: contain; }
+.ticket-word { display: block; font-family: 'Baloo 2',sans-serif; color: var(--green); font-size: 21px; min-height: 30px; }
+.flower-tile.found .flower-face,.letter-choice.correct,.memory-card.matched { animation: discovery-stamp .22s ease-out; }
+@keyframes discovery-stamp { from { opacity: .6; } to { opacity: 1; } }
+@media(max-width:650px) {
+  .letter-result { min-height: 170px; }
+  .train-ticket { gap: 10px; padding-inline: 0; }
+  .train-ticket .game-feedback { min-height: 72px; font-size: 13px; }
+  .ticket-art,.ticket-art img,.ticket-art>svg { width: 48px; height: 54px; }
+  .ticket-word { font-size: 19px; }
+  .flower-basket { margin-top: 18px; }
+  .game-page .game-feedback,.game-page .memory-feedback,#figure-feedback { min-height: 70px; }
+}
+@media(prefers-reduced-motion:reduce) { .flower-tile.found .flower-face,.letter-choice.correct,.memory-card.matched { animation: none; } }
+@media(forced-colors:active) { .train-wagon.model-hint { outline-color: Highlight; }.flower-basket .picked { border-color: Highlight; }.letter-choice.tried { outline-color: CanvasText; } }
+
+.figure-model .figure-word { min-height: 48px; }
+.figure-model .figure-word[hidden] { display: block; visibility: hidden; }
+.figure-hint-slot { min-height: 64px; }
+.game-page .activity-actions:empty { display: flex; }
+/* Keep the model and choices close together on school desktop screens. */
+@media(min-width:900px) {
+  .game-page { padding-top: 20px; }
+  .game-page .back-link { margin-bottom: 12px; }
+  .game-page .game-top { margin-bottom: 18px; }
+  .letter-workshop { display: grid; grid-template-columns: 200px minmax(0,1fr); column-gap: 24px; }
+  .letter-workshop .vowel-collection { grid-column: 1/-1; }
+  .letter-workshop .letter-model { grid-column: 1; grid-row: 2; }
+  .letter-workshop .model-caption { grid-column: 1; grid-row: 3; min-height: 34px; font-size: 12px; margin: 10px 0 0; }
+  .letter-workshop .hint-control { grid-column: 1; grid-row: 4; margin: 0 auto; }
+  .letter-workshop .letter-options { grid-column: 2; grid-row: 2/5; align-self: center; margin: 0; gap: 20px; }
+  .letter-workshop .letter-result { grid-column: 1/-1; min-height: 140px; }
+  .letter-workshop .activity-actions { grid-column: 1/-1; margin: 0; }
+  .figure-workshop { display: grid; grid-template-columns: 240px minmax(0,1fr); column-gap: 20px; }
+  .figure-workshop .vowel-collection,.figure-workshop .game-mode { grid-column: 1/-1; }
+  .figure-workshop .figure-model { grid-column: 1; grid-row: 3/6; align-self: center; }
+  .figure-workshop .model-caption { grid-column: 2; grid-row: 3; margin: 0; min-height: 44px; }
+  .figure-workshop .letter-options { grid-column: 2; grid-row: 4; margin: 0; gap: 20px; }
+  .figure-workshop .figure-hint-slot { grid-column: 2; grid-row: 5; }
+  .figure-workshop #figure-feedback,.figure-workshop .activity-actions { grid-column: 1/-1; }
+  .train-board { display: grid; grid-template-columns: 1fr 1fr; gap: 0 22px; }
+  .train-board .vowel-collection { grid-column: 1/-1; }
+  .train-board .train-model,.train-board .train-your { width: 100%; min-width: 0; margin-bottom: 12px; }
+  .train-board .train-engine { width: 51px; }
+  .train-board .letter-train { gap: 12px; }
+  .train-board .train-wagon { height: 64px; font-size: 36px; }
+  .train-board .train-model .train-wagon { height: 64px; }
+  .train-board .train-model .train-engine { height: 72px; }
+  .train-board .train-wagon:before { width: 14px; height: 14px; box-shadow: 37px 0 0 -4px white,37px 0 0 0 var(--ink); }
+  .train-board .train-engine:before { width: 14px; height: 14px; box-shadow: 21px 0 0 -4px white,21px 0 0 0 var(--ink); }
+  .train-board .hint-control { grid-column: 1; align-self: center; }
+  .train-board .train-options { grid-column: 2; margin: 20px 0; gap: 14px; }
+  .train-board .letter-choice { width: 88px; height: 90px; font-size: 54px; }
+  .train-board .train-ticket,.train-board .activity-actions { grid-column: 1/-1; }
+  .garden-board .flower-bed { grid-template-columns: repeat(6,minmax(0,1fr)); max-width: none; gap: 12px; padding-inline: 0; margin-top: 26px; }
+  .garden-board .flower-face { width: 72px; height: 76px; font-size: 41px; }
+  .garden-board .flower-tile { min-height: 130px; }
+  .garden-board .flower-basket { margin-top: 14px; }
+}

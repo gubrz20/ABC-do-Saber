@@ -1,0 +1,10 @@
+node_modules/
+_site/
+.superdesign/
+.DS_Store
+.env
+.env.*
+docs/*
+!docs/.gitkeep
+tests/export-canvas.mjs
+*.log
