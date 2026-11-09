@@ -58,5 +58,3 @@ npm run test:interactions
 ```
 
 Os testes verificam regras de jogos, integração, autorização do banco, acessibilidade, navegação e estabilidade das atividades. Os relatórios locais em `docs/` não são publicados.
-
-## Publicação no GitHub Pages
