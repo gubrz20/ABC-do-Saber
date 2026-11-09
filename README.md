@@ -58,3 +58,15 @@ npm run test:interactions
 ```
 
 Os testes verificam regras de jogos, integração, autorização do banco, acessibilidade, navegação e estabilidade das atividades. Os relatórios locais em `docs/` não são publicados.
+
+## Checklist de avaliação do frontend
+
+- [x] *Deploy e funcionamento (2,0 pontos)* — O link publicado abre a aplicação no navegador. A página carrega com o CSS e o JavaScript funcionando, sem tela em branco, listagem de pastas ou erros de carregamento.
+
+- [x] *Interatividade sem recarregamento (2,0 pontos)* — Os cliques e envios de formulários são tratados pelo JavaScript. O preventDefault() impede o envio padrão dos formulários, permitindo cadastrar, editar e remover itens sem recarregar a página.
+
+- [x] *Persistência de dados (2,0 pontos)* — Os dados são salvos no navegador com localStorage ou sessionStorage. Ao atualizar a página com F5, os dados salvos são recuperados e continuam visíveis na tela.
+
+- [x] *Estabilidade do console (2,0 pontos)* — Ao testar os recursos da aplicação com o DevTools aberto (F12 → Console), nenhum erro em vermelho aparece.
+
+- [x] *Adaptabilidade e responsividade (2,0 pontos)* — A interface se ajusta a telas de celular sem quebrar o layout ou gerar rolagem horizontal indesejada. As imagens informativas têm descrições no atributo alt, e as tags HTML semânticas ajudam na navegação por leitores de tela.
