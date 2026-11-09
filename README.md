@@ -70,3 +70,7 @@ Os testes verificam regras de jogos, integração, autorização do banco, acess
 - [x] Estabilidade do console — Ao testar os recursos da aplicação com o DevTools aberto (F12 → Console), nenhum erro em vermelho aparece.
 
 - [x] Adaptabilidade e responsividade — A interface se ajusta a telas de celular sem quebrar o layout ou gerar rolagem horizontal indesejada. As imagens informativas têm descrições no atributo alt, e as tags HTML semânticas ajudam na navegação por leitores de tela.
+
+## Contribuição e agradecimento
+
+Agradeço a *Felipe Schneider* pela contribuição na criação deste repositório. Ele disponibilizou seu MacBook para que eu pudesse configurar o repositório no GitHub e enviar os arquivos do projeto.
