@@ -16,17 +16,6 @@ Pensado para crianças de 3 a 5 anos, com acompanhamento de familiares ou profes
 
 O mascote usa a síntese de voz do navegador em português após ativação pelo adulto ou criança. Não usa microfone. Todas as atividades podem ser realizadas sem áudio, e animações respeitam a preferência por movimento reduzido.
 
-## Abrir pela pasta
-
-Baixe e extraia o projeto e dê dois cliques em **index.html**. A versão pronta `app.bundle.js` está incluída: não é necessário instalar Node.js para explorar as brincadeiras e histórias.
-
-Para desenvolvimento ou recursos de conta, use um servidor HTTP. Com Node.js 22 ou superior:
-
-```sh
-npm ci
-npm run build
-npm start
-```
 ## Desenvolvimento
 
 HTML, CSS e JavaScript, com módulos em `src/`. O esbuild gera `app.bundle.js`, um script compatível com a abertura direta do HTML, e prepara a pasta `_site/` para publicação. Após editar os módulos, execute `npm run build` e inclua o bundle atualizado no commit.
@@ -43,21 +32,6 @@ HTML, CSS e JavaScript, com módulos em `src/`. O esbuild gera `app.bundle.js`, 
 **O site publicado funciona sem conta. O Supabase não está configurado por padrão.** No modo de exploração, somente os identificadores de atividades concluídas são guardados na sessão da aba; não há sincronização entre dispositivos. O comportamento do armazenamento em abertura por arquivo pode variar entre navegadores; prefira o site publicado para uso regular.
 
 As migrações implementam RLS e operações RPC com autorização. Sessões infantis têm duração limitada; senhas e tokens de autenticação de adultos não são persistidos no navegador. Os testes locais de contas usam simulações e não validam envio real de e-mail.
-
-## Testes
-
-```sh
-npm run check
-npm test
-npm run test:database
-npx playwright-core install chromium
-# Com npm start em outro terminal:
-npm run test:e2e
-npm run test:header
-npm run test:interactions
-```
-
-Os testes verificam regras de jogos, integração, autorização do banco, acessibilidade, navegação e estabilidade das atividades. Os relatórios locais em `docs/` não são publicados.
 
 ## Checklist de avaliação do frontend
 
