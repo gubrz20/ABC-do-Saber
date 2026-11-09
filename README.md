@@ -2,8 +2,6 @@
 
 Um quintal de descobertas para a alfabetização infantil: letras, brincadeiras, histórias e conquistas, com um elefantinho que acompanha a criança.
 
-**[Abrir o site](https://schneiderfelipe922-byte.github.io/ABC-do-Saber/)**
-
 Pensado para crianças de 3 a 5 anos, com acompanhamento de familiares ou professores. A experiência é em português, com botões grandes, ilustrações, pistas visuais e voz opcional. Não há limite de tempo, vidas ou ranking.
 
 ## Brincar e aprender
@@ -29,9 +27,6 @@ npm ci
 npm run build
 npm start
 ```
-
-Abra **http://127.0.0.1:4173**. No macOS, o arquivo **Abrir ABC do saber.command** também inicia o servidor; mantenha o terminal aberto durante o uso. O servidor é somente local.
-
 ## Desenvolvimento
 
 HTML, CSS e JavaScript, com módulos em `src/`. O esbuild gera `app.bundle.js`, um script compatível com a abertura direta do HTML, e prepara a pasta `_site/` para publicação. Após editar os módulos, execute `npm run build` e inclua o bundle atualizado no commit.
@@ -73,7 +68,3 @@ npm run test:interactions
 Os testes verificam regras de jogos, integração, autorização do banco, acessibilidade, navegação e estabilidade das atividades. Os relatórios locais em `docs/` não são publicados.
 
 ## Publicação no GitHub Pages
-
-O workflow `.github/workflows/pages.yml` verifica o código, executa os testes unitários, gera o site e publica `_site/` a cada envio para `main`. Somente HTML, CSS, configuração pública, bundle e assets vão para a hospedagem. Arquivos de desenvolvimento, testes, histórico do protótipo e migrações ficam fora do site.
-
-Endereço: **https://schneiderfelipe922-byte.github.io/ABC-do-Saber/**
