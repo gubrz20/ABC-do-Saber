@@ -42,14 +42,6 @@ HTML, CSS e JavaScript, com módulos em `src/`. O esbuild gera `app.bundle.js`, 
 
 **O site publicado funciona sem conta. O Supabase não está configurado por padrão.** No modo de exploração, somente os identificadores de atividades concluídas são guardados na sessão da aba; não há sincronização entre dispositivos. O comportamento do armazenamento em abertura por arquivo pode variar entre navegadores; prefira o site publicado para uso regular.
 
-A integração opcional oferece contas de responsáveis e professores, perfis infantis e convites com autorização da família. Para ativá-la:
-
-1. Crie um projeto Supabase e aplique as três migrações de `supabase/migrations/` em ordem.
-2. Habilite autenticação por e-mail, confirmação de e-mail, senha mínima de dez caracteres e envio de mensagens.
-3. Configure a Site URL e os redirecionamentos para o endereço publicado, incluindo `https://schneiderfelipe922-byte.github.io/ABC-do-Saber/#nova-senha`.
-4. Preencha somente a URL e a chave **publicável** em `config.js`. Nunca inclua `service_role`, senhas ou chaves privadas.
-5. Teste cadastro, confirmação, recuperação, convites, autorização e revogação na instância real antes de usar contas com crianças.
-
 As migrações implementam RLS e operações RPC com autorização. Sessões infantis têm duração limitada; senhas e tokens de autenticação de adultos não são persistidos no navegador. Os testes locais de contas usam simulações e não validam envio real de e-mail.
 
 ## Testes
